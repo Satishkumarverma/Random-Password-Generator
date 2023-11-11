@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="flex">
+        <div class="alert_show">
+            <p id="color_change"><i class="fa-solid fa-triangle-exclamation fa-sm" id="icon"></i><span id="msg"></span>
+            </p>
+        </div>
+    </div>
+    <div class="box">
+        <div class="container">
+            <h2>Password Generator</h2>
+            <p>Generate your password by entering password size.</p>
+            <label for="numbers">Enter Password Size:</label>
+            <input type="number" id="numbers" placeholder="eg: 6-8 digits">
+            <div>
+                <button onclick="generatePassword()">Generate</button>
+                <button onclick="copyPassword()">Copy</button>
+            </div>
+            <input type="text" id="password_box" aria-label="Search" spellcheck="false">
+            <div class="copy_rights">
+                <p>&copy; satishkumarverma413@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
